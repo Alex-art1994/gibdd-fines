@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Таблица штрафов ГИБДД 2025</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FC60HFNFH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8FC60HFNFH');
+  </script>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1524492511451-10a3d33a42cc?auto=format&fit=crop&w=1350&q=80')
+                  center/cover no-repeat fixed;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #searchInput {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #007BFF;
+      color: #fff;
+      font-weight: 500;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Штрафы ГИБДД 2025</h1>
+    <input type="text" id="searchInput" placeholder="Поиск нарушения..." onkeyup="filterTable()">
+
+    <table id="finesTable">
+      <thead>
+        <tr>
+          <th>Нарушение (статья КоАП)</th>
+          <th>Штраф / наказание</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Управление ТС при неисправностях (ст. 12.5 ч.1)</td>
+          <td>500 ₽</td>
+        </tr>
+        <tr>
+          <td>Управление ТС при условиях, запрещающих эксплуатацию (ст. 12.5 ч.2)</td>
+          <td>Предупреждение или 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Непристёгнутый ремень безопасности (ст. 12.6)</td>
+          <td>1 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Управление без права управления (ст. 12.7 ч.1)</td>
+          <td>5 000–15 000 ₽, отстранение, задержание ТС</td>
+        </tr>
+        <tr>
+          <td>Передача управления лицу без прав (ст. 12.7 ч.3)</td>
+          <td>45 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Проезд на красный сигнал (ст. 12.12 ч.1)</td>
+          <td>1 500 ₽;<br>при повторном — 7 500 ₽ или лишение прав 4–6 мес.</td>
+        </tr>
+        <tr>
+          <td>Невыполнение остановки перед стоп-линией (ст. 12.12 ч.2)</td>
+          <td>800 ₽</td>
+        </tr>
+        <tr>
+          <td>Езда по обочине (ст. 12.15 ч.1)</td>
+          <td>2 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Выезд на встречную полосу при объезде (ст. 12.15 ч.3)</td>
+          <td>1 500–2 250 ₽</td>
+        </tr>
+        <tr>
+          <td>Выезд на встречку (не объезд) (ст. 12.15 ч.4)</td>
+          <td>7 500 ₽ или лишение прав 4–6 мес.</td>
+        </tr>
+        <tr>
+          <td>Повторный выезд на встречку (ст. 12.15 ч.5)</td>
+          <td>7 500 ₽ или лишение прав 1 год</td>
+        </tr>
+        <tr>
+          <td>Нарушение правил остановки/стоянки (ст. 12.19 ч.1)</td>
+          <td>300 ₽ (в Москве/СПб — 2 500 ₽)</td>
+        </tr>
+        <tr>
+          <td>Парковка на месте для инвалидов (ст. 12.19 ч.2)</td>
+          <td>5 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Нарушение остановки/стоянки (ст. 12.19 ч.3)</td>
+          <td>1 000 ₽ (в Москве/СПб — 3 000 ₽)</td>
+        </tr>
+        <tr>
+          <td>Нарушение правил перевозки людей (ст. 12.23 ч.1)</td>
+          <td>500 ₽</td>
+        </tr>
+        <tr>
+          <td>Нарушение требований к перевозке детей (ст. 12.23 ч.3)</td>
+          <td>Водителю 3 000 ₽;<br>должн. лицам 25 000 ₽;<br>юрлицам 100 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Неуплата штрафа в срок (ст. 20.25 ч.1)</td>
+          <td>Штраф в 2 раза или арест до 15 суток или обязат. работы до 50 ч</td>
+        </tr>
+        <tr>
+          <td>Отказ от медосвидетельствования (ст. 12.26 ч.1)</td>
+          <td>45 000 ₽ + лишение прав 1,5–2 года</td>
+        </tr>
+        <tr>
+          <td>Оставление места ДТП (ст. 12.27 ч.2)</td>
+          <td>Лишение прав до 1,5 года или арест до 15 суток</td>
+        </tr>
+        <tr>
+          <td>Повреждение дорог/переездов (ст. 12.33)</td>
+          <td>5 000–10 000 ₽</td>
+        </tr>
+        <tr>
+          <td>Превышение скорости 20–40 км/ч (ст. 12.9 ч.2)</td>
+          <td>750 ₽</td>
+        </tr>
+        <tr>
+          <td>Превышение скорости 40–60 км/ч (ст. 12.9 ч.3)</td>
+          <td>1 500–2 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Превышение скорости 60–80 км/ч (ст. 12.9 ч.4)</td>
+          <td>3 000–3 750 ₽ или лишение прав 4–6 мес.</td>
+        </tr>
+        <tr>
+          <td>Превышение скорости ≥80 км/ч (ст. 12.9 ч.5)</td>
+          <td>7 500 ₽ или лишение прав 6 мес.</td>
+        </tr>
+        <tr>
+          <td>Повторное превышение 40–60 км/ч (ст. 12.9 ч.6)</td>
+          <td>3 750 ₽</td>
+        </tr>
+        <tr>
+          <td>Повторное превышение 60–80 км/ч (ст. 12.9 ч.7)</td>
+          <td>7 500 ₽ или лишение прав 1 год</td>
+        </tr>
+        <tr>
+          <td>Несоблюдение разметки/знаков (ст. 12.16 ч.1)</td>
+          <td>750 ₽</td>
+        </tr>
+        <tr>
+          <td>Поворот налево/разворот вне места (ст. 12.16 ч.2)</td>
+          <td>1 500–2 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Движение во встречном направлении (ст. 12.16 ч.3)</td>
+          <td>7 500 ₽ или лишение прав 4–6 мес.</td>
+        </tr>
+        <tr>
+          <td>Повторное движение во встречке (ст. 12.16 ч.3.1)</td>
+          <td>7 500 ₽ или лишение прав 1 год</td>
+        </tr>
+        <tr>
+          <td>Парковка/остановка вне места (ст. 12.16 ч.4)</td>
+          <td>2 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Парковка вне места в Москве/СПб (ст. 12.16 ч.5)</td>
+          <td>4 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Движение по выделенной полосе (ст. 12.17 ч.1.1)</td>
+          <td>2 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Выезд на выделенную полосу в Москве/СПб (ст. 12.17 ч.1.2)</td>
+          <td>4 500 ₽</td>
+        </tr>
+        <tr>
+          <td>Непредоставление преимущества спецтранспорту (ст. 12.17 ч.2)</td>
+          <td>4 500–7 500 ₽ или лишение прав до 1 года</td>
+        </tr>
+        <tr>
+          <td>Причинение легкого вреда (ст. 12.24 ч.1)</td>
+          <td>3 750–7 500 ₽ или лишение прав 1–1,5 года</td>
+        </tr>
+        <tr>
+          <td>Причинение вреда средней тяжести (ст. 12.24 ч.2)</td>
+          <td>15 000–37 500 ₽ или лишение прав 1,5–2 года</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function filterTable() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('#finesTable tbody tr');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
