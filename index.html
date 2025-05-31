@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-adsense-account" content="ca-pub-2653744961958770">
+  <!-- Яндекс-верификация -->
+  <meta name="yandex-verification" content="1a3853421e5cfab9" />
 
   <!-- AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-2653744961958770"
@@ -12,11 +13,33 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FC60HFNFH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-8FC60HFNFH');
   </script>
 
+  <!-- Яндекс.Метрика (общий счётчик для всех сайтов) -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){ (m[i].a=m[i].a||[]).push(arguments) };
+      m[i].l=1*new Date();
+      k=e.createElement(t), a=e.getElementsByTagName(t)[0];
+      k.async=1; k.src=r; a.parentNode.insertBefore(k,a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(ВАШ_ID_СЧЁТЧИКА, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true,
+      trackHash:true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/ВАШ_ID_СЧЁТЧИКА" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+
+  <!-- Стили для страницы -->
   <style>
     html, body {
       margin: 0; padding: 0;
@@ -34,10 +57,11 @@
     h1 {
       text-align: center;
       margin-bottom: 20px;
+      color: #333;
     }
     #searchInput {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -47,9 +71,10 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-bottom: 20px;
     }
     th, td {
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ccc;
       text-align: left;
       vertical-align: top;
@@ -62,12 +87,26 @@
     tr:nth-child(even) {
       background-color: #f9f9f9;
     }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+    footer a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Штрафы ГИБДД 2025</h1>
     <input type="text" id="searchInput" placeholder="Поиск нарушения..." onkeyup="filterTable()">
+
     <table id="finesTable">
       <thead>
         <tr>
@@ -87,9 +126,13 @@
         <tr><td>Выезд на встречку при объезде (ст. 12.15 ч.3)</td><td>1 500–2 250 ₽</td></tr>
         <tr><td>Выезд на встречку (ст. 12.15 ч.4)</td><td>7 500 ₽ или лишение прав 4–6 мес.</td></tr>
         <tr><td>Повторный выезд на встречку (ст. 12.15 ч.5)</td><td>7 500 ₽ или лишение прав 1 год</td></tr>
-        <!-- добавьте остальные строки по аналогии -->
+        <!-- При необходимости добавьте остальные строки таблицы так же -->
       </tbody>
     </table>
+
+    <footer>
+      &copy; 2025 Alex-art1994. <a href="https://alex-art1994.github.io/">Все сайты</a>
+    </footer>
   </div>
 
   <script>
